@@ -20,17 +20,20 @@ public class QA_Tech_API_Code extends BaseClassURL {
 
 		JSONObject jsonBody = new JSONObject();
 		JSONObject user = new JSONObject();
-
+		
+		//raw body data
 		user.put("first_name", "Aaron");
 		user.put("last_name", "Gonsalves");
 		user.put("password", "password");
 		user.put("email", emailRandom);
 		user.put("image_url", "https://static.thenounproject.com/png/961-200.png");
 		
+		//client ID and secret
 		jsonBody.put("client_id", "277ef29692f9a70d511415dc60592daf4cf2c6f6552d3e1b769924b2f2e2e6fe");
 		jsonBody.put("client_secret", "d6106f26e8ff5b749a606a1fba557f44eb3dca8f48596847770beb9b643ea352");
 		jsonBody.put("user", user);
-
+		
+		//header type
 		Response response = RestAssured.given().headers("Content-Type", "application/json").body(jsonBody)
 				.post("users");
 
@@ -45,6 +48,7 @@ public class QA_Tech_API_Code extends BaseClassURL {
 		JSONObject jsonBody = new JSONObject();
 		JSONObject user = new JSONObject();
 
+		//raw body data
 		user.put("first_name", "Aaron");
 		user.put("last_name", "Gonsalves");
 		user.put("date_of_birth", 1464083530);
@@ -52,6 +56,7 @@ public class QA_Tech_API_Code extends BaseClassURL {
 
 		jsonBody.put("user", user);
 
+		//header type
 		Response response = RestAssured.given().header("Authorization", "Bearer " + accessToken)
 				.header("Content-Type", "application/json").body(jsonBody)
 				.put("users/me");
@@ -62,6 +67,7 @@ public class QA_Tech_API_Code extends BaseClassURL {
 	@Test(priority = 3, enabled = true, description = "This API shows the user which is created")
 	public void testUsersShowMeGet() {
 
+		//header type
 		Response response = RestAssured.given().headers("Authorization", "Bearer " + accessToken)
 				.get("users/me");
 
@@ -73,6 +79,7 @@ public class QA_Tech_API_Code extends BaseClassURL {
 	@Test(priority = 4, enabled = true, description = "This API shows the user ID which is created")
 	public void testUsersShowIDGet() {
 
+		//header type
 		Response response = RestAssured.given().headers("Authorization", "Bearer " + accessToken)
 				.get("users/" + userID);
 
@@ -85,17 +92,18 @@ public class QA_Tech_API_Code extends BaseClassURL {
 		JSONObject jsonBody = new JSONObject();
 		JSONObject user = new JSONObject();
 
+		//raw body data
 		user.put("name", "A Visible Widget");
 		user.put("description", "Widget 1");
 		user.put("kind", "visible");
 
 		jsonBody.put("widget", user);
 
+		//header type
 		Response response = RestAssured.given().header("Authorization", "Bearer " + accessToken)
 				.header("Content-Type", "application/json").body(jsonBody)
 				.post("widgets");
 
 		Assert.assertEquals(response.getStatusCode(), 200);
-
 	}
 }
