@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="4840" started-at="2020-01-31T22:22:43Z" finished-at="2020-01-31T22:22:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="4840" started-at="2020-01-31T22:22:43Z" finished-at="2020-01-31T22:22:48Z">
+      <class name="com.apitech.test.QA_Tech_API_Code">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.apitech.test.QA_Tech_API_Code@46d56d67]" name="setup" is-config="true" duration-ms="366" started-at="2020-01-31T22:22:43Z" finished-at="2020-01-31T22:22:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testUsersCreatePost()[pri:1, instance:com.apitech.test.QA_Tech_API_Code@46d56d67]" name="testUsersCreatePost" duration-ms="3138" started-at="2020-01-31T22:22:44Z" description="This API helps to create user" finished-at="2020-01-31T22:22:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsersCreatePost -->
+        <test-method status="PASS" signature="testUsersUpdatePut()[pri:2, instance:com.apitech.test.QA_Tech_API_Code@46d56d67]" name="testUsersUpdatePut" duration-ms="293" started-at="2020-01-31T22:22:47Z" description="This API updates the user created in the post method" finished-at="2020-01-31T22:22:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsersUpdatePut -->
+        <test-method status="PASS" signature="testUsersShowMeGet()[pri:3, instance:com.apitech.test.QA_Tech_API_Code@46d56d67]" name="testUsersShowMeGet" duration-ms="415" started-at="2020-01-31T22:22:47Z" description="This API shows the user which is created" finished-at="2020-01-31T22:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsersShowMeGet -->
+        <test-method status="PASS" signature="testUsersShowIDGet()[pri:4, instance:com.apitech.test.QA_Tech_API_Code@46d56d67]" name="testUsersShowIDGet" duration-ms="295" started-at="2020-01-31T22:22:48Z" description="This API shows the user ID which is created" finished-at="2020-01-31T22:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUsersShowIDGet -->
+        <test-method status="PASS" signature="testWidgetCreateVisiblePost()[pri:5, instance:com.apitech.test.QA_Tech_API_Code@46d56d67]" name="testWidgetCreateVisiblePost" duration-ms="305" started-at="2020-01-31T22:22:48Z" description="This API creates a visible widget" finished-at="2020-01-31T22:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWidgetCreateVisiblePost -->
+      </class> <!-- com.apitech.test.QA_Tech_API_Code -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
