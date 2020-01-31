@@ -3,11 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.apitech.test.User_Create_Post">
+      <class name="com.apitech.test.QA_Tech_API_Code">
         <methods>
-          <include name="testUsersCheckEmail"/>
+          <include name="testWidgetCreateVisiblePost"/>
+          <include name="setup"/>
+          <include name="testUsersShowIDGet"/>
+          <include name="testUsersCreatePost"/>
+          <include name="testUsersUpdatePut"/>
+          <include name="testUsersShowMeGet"/>
         </methods>
-      </class> <!-- com.apitech.test.User_Create_Post -->
+      </class> <!-- com.apitech.test.QA_Tech_API_Code -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
